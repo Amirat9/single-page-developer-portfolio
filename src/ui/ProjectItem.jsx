@@ -1,3 +1,4 @@
+import Button from './Button';
 const ProjectItem = ({ title, techs, smThumb, lgThumb }) => {
   return (
     <div>
@@ -5,20 +6,10 @@ const ProjectItem = ({ title, techs, smThumb, lgThumb }) => {
         <div className='absolute top-0 right-0 bottom-0 left-0 bg-black opacity-75 min-w-full min-h-full hidden'>
           <div className='flex flex-col items-center justify-center min-h-full gap-8'>
             <div className='text-center'>
-              <a
-                href='#'
-                className='font-bold border-b-2 pb-2 uppercase transition-colors duration-200 border-green hover:text-green'
-              >
-                View Project
-              </a>
+              <Button text={'View Project'} />
             </div>
             <div className='text-center'>
-              <a
-                href='#'
-                className='font-bold border-b-2 pb-2 uppercase transition-colors duration-200 border-green hover:text-green'
-              >
-                view code
-              </a>
+              <Button text={'view code'} />
             </div>
           </div>
         </div>
@@ -27,28 +18,19 @@ const ProjectItem = ({ title, techs, smThumb, lgThumb }) => {
           alt='small thumbnail'
         />
       </div>
-      <h3 className='uppercase'>{title}</h3>
+      <h3 className='text-2xl font-bold uppercase'>{title}</h3>
       <div className='flex gap-5 mt-2 text-lightGrey uppercase'>
+        {/* eslint-disable-next-line react/prop-types */}
         {techs.map((tech, index) => (
           <p key={index}>{tech}</p>
         ))}
       </div>
       <div className='flex gap-8 mt-5 lg:hidden'>
-        <div className='text-center'>
-          <a
-            href='#'
-            className='font-bold border-b-2 pb-2 border-green uppercase'
-          >
-            View Project
-          </a>
+        <div>
+          <Button text={'View Project'} />
         </div>
-        <div className='text-center'>
-          <a
-            href='#'
-            className='font-bold border-b-2 pb-2 border-green uppercase'
-          >
-            view code
-          </a>
+        <div>
+          <Button text={'view code'} />
         </div>
       </div>
     </div>

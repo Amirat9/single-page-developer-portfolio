@@ -1,38 +1,66 @@
-[
-  {
-    "title": "design portfolio",
-    "techs": ["html", "css"],
-    "thumbnailSmall": "../../images/thumbnail-project-1-small.webp",
-    "thumbnailLarge": "../../images/thumbnail-project-1-large.webp"
-  },
-  {
-    "title": "e-learning landing page",
-    "techs": ["html", "css"],
-    "thumbnailSmall": "../../images/thumbnail-project-2-small.webp",
-    "thumbnailLarge": "../../images/thumbnail-project-2-large.webp"
-  },
-  {
-    "title": "todo web app",
-    "techs": ["html", "css", "javascript"],
-    "thumbnailSmall": "../../images/thumbnail-project-3-small.webp",
-    "thumbnailLarge": "../../images/thumbnail-project-3-large.webp"
-  },
-  {
-    "title": "entertainment web app",
-    "techs": ["html", "css", "javascript"],
-    "thumbnailSmall": "../../images/thumbnail-project-4-small.webp",
-    "thumbnailLarge": "../../images/thumbnail-project-4-large.webp"
-  },
-  {
-    "title": "memory game",
-    "techs": ["html", "css", "javascript"],
-    "thumbnailSmall": "../../images/thumbnail-project-5-small.webp",
-    "thumbnaillarge": "../../images/thumbnail-project-5-large.webp"
-  },
-  {
-    "title": "design portfolio",
-    "techs": ["html", "css", "javascript"],
-    "thumbnailSmall": "../../images/thumbnail-project-6-small.webp",
-    "thumbnailLarge": "../../images/thumbnail-project-6-large.webp"
-  }
-]
+{
+  "projects": [
+    {
+      "title": "design portfolio",
+      "techs": ["html", "css"],
+      "smThumb": "../../images/thumbnail-project-1-small.webp",
+      "lgThumb": "../../images/thumbnail-project-1-large.webp"
+    },
+    {
+      "title": "e-learning landing page",
+      "techs": ["html", "css"],
+      "smThumb": "../../images/thumbnail-project-2-small.webp",
+      "lgThumb": "../../images/thumbnail-project-2-large.webp"
+    },
+    {
+      "title": "todo web app",
+      "techs": ["html", "css", "javascript"],
+      "smThumb": "../../images/thumbnail-project-3-small.webp",
+      "lgThumb": "../../images/thumbnail-project-3-large.webp"
+    },
+    {
+      "title": "entertainment web app",
+      "techs": ["html", "css", "javascript"],
+      "smThumb": "../../images/thumbnail-project-4-small.webp",
+      "lgThumb": "../../images/thumbnail-project-4-large.webp"
+    },
+    {
+      "title": "memory game",
+      "techs": ["html", "css", "javascript"],
+      "smThumb": "../../images/thumbnail-project-5-small.webp",
+      "thumbnaillarge": "../../images/thumbnail-project-5-large.webp"
+    },
+    {
+      "title": "design portfolio",
+      "techs": ["html", "css", "javascript"],
+      "smThumb": "../../images/thumbnail-project-6-small.webp",
+      "lgThumb": "../../images/thumbnail-project-6-large.webp"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "year": 4
+    },
+    {
+      "name": "CSS",
+      "year": 4
+    },
+    {
+      "name": "Javascript",
+      "year": 4
+    },
+    {
+      "name": "Accessibility",
+      "year": 4
+    },
+    {
+      "name": "React",
+      "year": 3
+    },
+    {
+      "name": "Sass",
+      "year": 3
+    }
+  ]
+}

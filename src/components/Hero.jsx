@@ -1,54 +1,50 @@
-import mobileHero from '../../public/images/mobile-hero.png';
-import tabletHero from '../../public/images/image-profile-tablet.webp';
-import desktopHero from '../../public/images/image-profile-desktop.webp';
-import Cricle from '../../public/images/pattern-circle.svg';
+import Button from '../ui/Button';
 
 const Hero = () => {
   return (
-    <section className='mx-4 lg:mx-40'>
-      <div className='absolute h-96 w-44 top-0 translate-x-[-50%] left-1/2 mx-auto gradient sm:hidden '>
+    <main className='flex flex-col gap-6 mt-80 sm:mt-[90px] sm:gap-0'>
+      {/* Rings */}
+      <div className='absolute top-32 translate-x-[-50%] -z-30'>
         <img
-          src={mobileHero}
-          alt=''
-          className=' w-44 h-full mx-auto object-contain object-bottom -z-20'
+          src='./images/pattern-rings.svg'
+          alt='Background Rings'
+          className='w-[530px] h-32'
         />
       </div>
-      <div className='absolute h-[600px] w-80 top-[-6%] right-[-6%] left-1/2 mx-auto gradient hidden sm:block -z-20 '>
+      {/* circle */}
+      <div className='absolute top-64 right-[-64px]'>
         <img
-          src={tabletHero}
-          alt=''
-          className='mx-auto object-contain object-bottom'
+          src='./images/pattern-circle.svg'
+          alt='Background Circle'
         />
       </div>
-      <div className='absolute h-[720px] w-[445px] top-0 right-10 left-1/2 mx-auto gradient hidden lg:block lg:-z-20 '>
+      {/* Profile Image */}
+      <div className='absolute top-0 right-0 left-0 -z-20'>
         <img
-          src={desktopHero}
-          alt=''
-          className='mx-auto object-contain object-bottom'
+          src='./images/image-profile-mobile.webp'
+          alt='Mobile Profile Image'
+          className='w-[174px] h-96 mx-auto'
         />
       </div>
-      <div className='text-center lg:w-[709px] lg:text-left'>
-        <h1 className='text-[40px]  font-bold leading-10 tracking-[-1.136px] mt-80 sm:w-[450px] sm:h-[223px] sm:text-[72px] sm:leading-[72px] sm:mt-[90px] sm:tracking-[-1.5px] sm:text-left lg:w-full lg:mt-48 lg:text-[88px] lg:leading-[88px] lg:tracking-[-2.5px]'>
-          Nice to meet you! I’m{' '}
-          <span className='underline underline-offset-8 decoration-green '>
-            Adam Keyes
-          </span>
-          .
-        </h1>
-        <p className='text-left text-lightGrey my-6 lg:mr-[261px] lg:mb-28'>
-          Based in the UK, I’m a front-end developer passionate about building
-          accessible web apps that users love.
-        </p>
-        <div>
-          <a
-            href='#contact'
-            className='font-bold border-b-2 pb-2 uppercase transition-colors duration-200 border-green hover:text-green'
-          >
-            Contact me
-          </a>
-        </div>
+      {/* Main Title */}
+      <h1 className='heading-1 text-center sm:text-left sm:max-w-[443px] sm:mb-[60px]'>
+        Nice to<span className='hidden sm:block lg:hidden'> </span> meet you!
+        I’m{' '}
+        <span className='underline decoration-green underline-offset-8'>
+          Adam Keyes
+        </span>
+        .
+      </h1>
+      {/* Intro */}
+      <p className='text-center sm:mb-8 sm:text-left sm:w-[445px]'>
+        Based in the UK, I’m a front-end developer passionate about building
+        accessible web apps that users love.
+      </p>
+      {/* Contact Button */}
+      <div className='self-center sm:self-start'>
+        <Button text={'contact me'} />
       </div>
-    </section>
+    </main>
   );
 };
 

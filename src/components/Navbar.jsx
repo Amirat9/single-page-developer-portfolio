@@ -1,13 +1,15 @@
 import GithubIcon from '../ui/GithubIcon';
-import TwitterIcon from '../ui/TwitterIcon';
 import LinkedinIcon from '../ui/LinkedinIcon';
-import Frontendmentor from '../ui/FrontendmentorIcon';
+import TwitterIcon from '../ui/TwitterIcon';
+import FrontendmentorIcon from '../ui/FrontendmentorIcon';
 
 const Navbar = () => {
   return (
-    <nav className=' flex flex-col gap-5 pt-4 text-center sm:px-[30px] sm:pt-7 sm:flex-row sm:justify-between lg:mx-40 lg:pt-11 '>
-      <h3 className='tracking-tighter z-30'>adamkeyes</h3>
-      <ul className='flex gap-4 items-center lg:mx-0 lg:mr-5 lg:gap-6 z-30'>
+    <nav className='flex flex-col items-center justify-center sm:flex-row sm:justify-between'>
+      <h3 className='text-2xl text-center leading-8 tracking-[0.333px] font-bold mb-5 sm:text-[32px] sm:leading-8 sm:tracking-[-0.444px] sm:text-left sm:mb-0'>
+        adamkeyes
+      </h3>
+      <ul className='flex gap-5 justify-center sm:gap-7'>
         <li>
           <a href='#'>
             <GithubIcon />
@@ -15,7 +17,7 @@ const Navbar = () => {
         </li>
         <li>
           <a href='#'>
-            <Frontendmentor className='transition-colors duration-200' />
+            <FrontendmentorIcon />
           </a>
         </li>
         <li>
