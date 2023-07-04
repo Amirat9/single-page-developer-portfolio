@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black w-screen h-screen font-spaceGrotesk text-white;
+  }
+
+  h1 {
+    @apply text-[88px] font-bold leading-[88px] tracking-[-2.5px];
+  }
+  h2 {
+    @apply text-5xl font-bold leading-[56px] tracking-[-1.5px];
+  }
+  h3 {
+    @apply text-2xl font-bold leading-8;
+  }
+  p {
+    @apply text-lg leading-7;
+  }
+}
+
+@layer components {
+  .gradient {
+    background: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, #242424 100%);
+  }
+}
+
+#root {
+  max-width: 1440px;
+  margin: auto;
+  background-image: url('../public/images/pattern-rings.svg'),
+    url('../public/images/pattern-rings.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: -10% 200px, top 1100px right -25%;
+}
+
+footer {
+  background-image: url('../public/images/pattern-rings.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 230px left calc(50% - 50vw);
+}
