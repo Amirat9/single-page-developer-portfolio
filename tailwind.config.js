@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        xl: '1440px',
+        '2xl': '1440px',
       },
       fontFamily: {
         spaceGrotesk: ['Space Grotesk', 'sans-serif'],

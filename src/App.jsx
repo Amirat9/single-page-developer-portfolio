@@ -5,14 +5,12 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 const App = () => {
   return (
-    <div className='relative max-w-screen-xl min-h-full mx-auto px-4 pt-5 overflow-hidden sm:pt-8 sm:px-8'>
+    <div className='relative max-w-screen-2xl min-h-full mx-auto px-4 pt-5 overflow-hidden sm:pt-8 sm:px-8 lg:pt-10 lg:px-24 xl:px-[165px]'>
       <Navbar />
       <Hero />
       <Experiences />
       <Projects />
-      <footer className='pt-[60px] px-4 pb-2 bg-darkGrey mx-[-16px] sm:mx-[-32px] lg:mx-[-30px] '>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 };

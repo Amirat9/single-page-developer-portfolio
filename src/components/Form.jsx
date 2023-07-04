@@ -3,7 +3,7 @@ const Form = () => {
     <form
       id='contact'
       noValidate
-      className='flex flex-col gap-8 mt-[50px]'
+      className='flex flex-col gap-8 mt-[50px] lg:mt-0 lg:w-[445px]'
     >
       <input
         type='text'
