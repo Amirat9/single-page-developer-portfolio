@@ -95,6 +95,8 @@ const Form = () => {
     <form
       id='contact'
       onSubmit={handleSubmit}
+      method='POST'
+      data-netlify='true'
       noValidate
       className='flex flex-col gap-8 mt-[50px] lg:mt-0 lg:w-[445px]'
     >
