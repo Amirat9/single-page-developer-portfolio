@@ -55,7 +55,10 @@ const Hero = () => {
       </p>
       {/* Contact Button */}
       <div className='self-center sm:self-start'>
-        <Button text={'contact me'} />
+        <Button
+          text={'contact me'}
+          link='contact'
+        />
       </div>
     </main>
   );

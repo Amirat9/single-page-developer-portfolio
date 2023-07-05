@@ -6,9 +6,11 @@ import FrontendmentorIcon from '../ui/FrontendmentorIcon';
 const Navbar = () => {
   return (
     <nav className='flex flex-col items-center justify-center sm:flex-row sm:justify-between'>
+      {/* Logo */}
       <h3 className='text-2xl text-center leading-8 tracking-[0.333px] font-bold mb-5 sm:text-[32px] sm:leading-8 sm:tracking-[-0.444px] sm:text-left sm:mb-0'>
         adamkeyes
       </h3>
+      {/* Social Media Icons */}
       <ul className='flex gap-5 justify-center sm:gap-7 lg:mr-5'>
         <li>
           <a href='#'>

@@ -1,7 +1,9 @@
 import Form from './Form';
 import Navbar from './Navbar';
+
 const Footer = () => {
   return (
+    // Footer
     <footer className='relative pt-[60px] px-4 pb-2 bg-darkGrey mx-[-16px] sm:mx-[-32px] lg:mx-[-165px] lg:px-40 '>
       {/* Footer Content */}
       <div className='flex flex-col pb-20 border-b sm:px-36 lg:px-0 lg:flex-row lg:justify-between'>
