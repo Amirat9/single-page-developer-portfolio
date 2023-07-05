@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Skill = ({ name, year }) => {
   return (
     <div className='text-center sm:text-left'>
@@ -9,6 +11,11 @@ const Skill = ({ name, year }) => {
       </p>
     </div>
   );
+};
+
+Skill.propTypes = {
+  name: PropTypes.string.isRequired,
+  year: PropTypes.number.isRequired,
 };
 
 export default Skill;

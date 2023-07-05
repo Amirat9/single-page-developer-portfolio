@@ -1,4 +1,6 @@
 import Button from './Button';
+import PropTypes from 'prop-types';
+
 const ProjectItem = ({ title, techs, smThumb, lgThumb }) => {
   return (
     <div>
@@ -41,6 +43,13 @@ const ProjectItem = ({ title, techs, smThumb, lgThumb }) => {
       </div>
     </div>
   );
+};
+
+ProjectItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  techs: PropTypes.array.isRequired,
+  smThumb: PropTypes.string.isRequired,
+  lgThumb: PropTypes.string.isRequired,
 };
 
 export default ProjectItem;
