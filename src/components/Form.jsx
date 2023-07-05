@@ -162,7 +162,10 @@ const Form = () => {
       </div>
       {/* Submit Button */}
       <div className='self-end'>
-        <button className='leading-[26px] font-bold tracking-[2.286px] pb-[10px] border-b-2 border-green uppercase hover:text-green transition-colors duration-200 cursor-pointer'>
+        <button
+          type='submit'
+          className='leading-[26px] font-bold tracking-[2.286px] pb-[10px] border-b-2 border-green uppercase hover:text-green transition-colors duration-200 cursor-pointer'
+        >
           send message
         </button>
       </div>
