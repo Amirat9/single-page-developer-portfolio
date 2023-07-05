@@ -16,6 +16,12 @@ const ProjectItem = ({ title, techs, smThumb, lgThumb }) => {
         <img
           src={smThumb}
           alt='small thumbnail'
+          className='lg:hidden'
+        />
+        <img
+          src={lgThumb}
+          alt='thumbnail'
+          className='hidden lg:block'
         />
       </div>
       <h3 className='text-2xl font-bold uppercase'>{title}</h3>

@@ -28,7 +28,7 @@
       "title": "memory game",
       "techs": ["html", "css", "javascript"],
       "smThumb": "../../images/thumbnail-project-5-small.webp",
-      "thumbnaillarge": "../../images/thumbnail-project-5-large.webp"
+      "lgThumb": "../../images/thumbnail-project-5-large.webp"
     },
     {
       "title": "design portfolio",
